@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    background-color: #082029;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 32px;
+    padding-block: 16px;
+}
+
+header img{
+    height: 100px;
+}
+
+main{
+    flex: 1;
+}
+
+footer{
+    background-color: #082029;
+    height: 120px;
+}
