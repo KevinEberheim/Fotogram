@@ -5,7 +5,7 @@ body{
     height: 100vh;
 }
 
-header{
+.header_main_website{
     background-color: #082029;
     display: flex;
     justify-content: flex-start;
@@ -14,7 +14,7 @@ header{
     padding-block: 16px;
 }
 
-header img{
+.header_main_website img{
     height: 100px;
 }
 
