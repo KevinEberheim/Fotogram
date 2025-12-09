@@ -7,19 +7,33 @@
     <title>Fotogram</title>
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
 </head>
 
 <body onload="init()">
     <header class="header_main_website">
-        <div class="header_content"><img src="img/Fotogram_Logo.svg" alt="Fotogram_Logo"></header></div>
+        <div class="header_content">
+            <img src="img/Fotogram_Logo.svg" alt="Fotogram_Logo">
+        </div>
+    </header>
     <main>
         <div class="main_content">
-        <h1>Album</h1>
-        <section class="image_style" id="image_load"></section>
+            <h1>Album</h1>
+            <section class="image_style" id="image_load"></section>
         </div>
+        <dialog id="pictureDialog">
+            <header>
+                <h2>test</h2>
+                <button onclick="closeDialog()">Schließen</button>
+            </header>
+            <main id="dialogMain">
+
+            </main>
+            <footer id="dialogFooter">
+    
+            </footer>
+        </dialog>
     </main>
     <footer>test</footer>
 </body>
-
+<script src="script.js"></script>
 </html>
