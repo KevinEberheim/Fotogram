@@ -66,3 +66,36 @@ footer {
     background-color: #082029;
     min-height: 140px;
 }
+
+.pictureDialogclass{
+    background-color: #082029;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 450px;
+}
+
+.pictureDialogclass header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pictureDialogclass main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 16px;
+}
+
+.pictureDialogclass img{
+    height: 550px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.pictureDialogclass footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

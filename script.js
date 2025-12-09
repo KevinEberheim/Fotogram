@@ -9,12 +9,12 @@ for (let index = 0; index < images.length; index++) {
 }
 
 function load_images(index) {
-    return `<img onclick="openDialog(${index})" src=./img/${images[index]}>`;
+    return `<img onclick="openDialog(${index}), eventBubbling(event)" src=./img/${images[index]}>`;
 }
 
 const dialogRef= document.getElementById("pictureDialog");
 const dialogFooterRef = document.getElementById("dialogFooter")
-function openDialog(index){
+function openDialog(index, event){
     dialogRef.showModal();
     showImageDialog(index);
     dialogFooterRef.innerHTML = footerdialog(index);
@@ -59,4 +59,8 @@ function footerdialog(index){
     return `<button onclick="buttonLeft(${index})">links</button>
                 <span>${index+1}/${images.length}</span>
                 <button onclick="buttonRight(${index})">rechts</button>`
+}
+
+function eventBubbling(event){
+    event.stopPropagation();
 }

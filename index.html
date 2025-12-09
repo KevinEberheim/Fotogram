@@ -20,15 +20,15 @@
             <h1>Album</h1>
             <section class="image_style" id="image_load"></section>
         </div>
-        <dialog id="pictureDialog">
-            <header>
+        <dialog onclick="closeDialog()" class="pictureDialogclass" id="pictureDialog">
+            <header onclick="eventBubbling(event)">
                 <h2>test</h2>
                 <button onclick="closeDialog()">Schließen</button>
             </header>
-            <main id="dialogMain">
+            <main onclick="eventBubbling(event)" id="dialogMain">
 
             </main>
-            <footer id="dialogFooter">
+            <footer onclick="eventBubbling(event)" id="dialogFooter">
     
             </footer>
         </dialog>
