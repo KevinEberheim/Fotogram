@@ -15,15 +15,15 @@
             <img src="img/Fotogram_Logo.svg" alt="Fotogram_Logo">
         </div>
     </header>
-    <main>
+    <main class="main_website">
         <div class="main_content">
             <h1>Album</h1>
             <section class="image_style" id="image_load"></section>
         </div>
         <dialog onclick="closeDialog()" class="pictureDialogclass" id="pictureDialog">
             <header onclick="eventBubbling(event)">
-                <h2>test</h2>
-                <button onclick="closeDialog()">Schließen</button>
+                <h2 id="name_img"></h2>
+                <button onclick="closeDialog()">&times;</button>
             </header>
             <main onclick="eventBubbling(event)" id="dialogMain">
 
@@ -33,7 +33,7 @@
             </footer>
         </dialog>
     </main>
-    <footer>test</footer>
+    <footer class="footer_main_website">test</footer>
 </body>
 <script src="script.js"></script>
 </html>

@@ -18,6 +18,7 @@ function openDialog(index){
     dialogRef.showModal();
     showImageDialog(index);
     dialogFooterRef.innerHTML = footerdialog(index);
+    name_for_img(index);
 }
 
 function closeDialog(){
@@ -56,11 +57,16 @@ function buttonRight(index){
 }
 
 function footerdialog(index){
-    return `<button onclick="buttonLeft(${index})">links</button>
+    return `<button onclick="buttonLeft(${index})">&blacktriangleleft;</button>
                 <span>${index+1}/${images.length}</span>
-                <button onclick="buttonRight(${index})">rechts</button>`
+                <button onclick="buttonRight(${index})">&blacktriangleright;</button>`
 }
 
 function eventBubbling(event){
     event.stopPropagation();
+}
+
+const image_name = document.getElementById('name_img')
+function name_for_img(index){
+    image_name.innerHTML = images[index];
 }
