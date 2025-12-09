@@ -14,7 +14,7 @@ function load_images(index) {
 
 const dialogRef= document.getElementById("pictureDialog");
 const dialogFooterRef = document.getElementById("dialogFooter")
-function openDialog(index, event){
+function openDialog(index){
     dialogRef.showModal();
     showImageDialog(index);
     dialogFooterRef.innerHTML = footerdialog(index);

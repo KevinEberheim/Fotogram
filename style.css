@@ -70,8 +70,6 @@ footer {
 .pictureDialogclass{
     background-color: #082029;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     height: 650px;
     width: 450px;
 }
