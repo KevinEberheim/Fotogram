@@ -62,6 +62,7 @@ h1 {
     border-radius: 10px;
     height: 230px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .footer_main_website {
@@ -118,6 +119,7 @@ h1 {
     height: 60px;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
 }
 
 .pictureDialogclass::backdrop{
