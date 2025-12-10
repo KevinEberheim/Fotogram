@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-inline: 16px;
 }
 
 h1 {
@@ -46,6 +47,7 @@ h1 {
     align-items: center;
     max-width: 1440px;
     width: 100%;
+    padding-inline: 16px;
 }
 
 .image_style {
