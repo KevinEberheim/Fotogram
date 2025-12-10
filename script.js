@@ -9,7 +9,7 @@ for (let index = 0; index < images.length; index++) {
 }
 
 function load_images(index) {
-    return `<img onclick="openDialog(${index}), eventBubbling(event)" src=./img/${images[index]}>`;
+    return `<img onclick="openDialog(${index}), eventBubbling(event)" tabindex="0" src=./img/${images[index]}>`;
 }
 
 const dialogRef= document.getElementById("pictureDialog");
