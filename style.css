@@ -65,6 +65,10 @@ h1 {
 .footer_main_website {
     background-color: #082029;
     min-height: 140px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pictureDialogclass {
