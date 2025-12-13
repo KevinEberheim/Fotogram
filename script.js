@@ -20,7 +20,7 @@ function init() {
 }
 
 function load_images(index) {
-    return `<img onclick="openDialog(${index}), eventBubbling(event)" tabindex="0" src=./img/${images[index]}>`;
+    return `<a href="#" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]}></a>`;
 }
 
 const dialogRef = document.getElementById("pictureDialog");
