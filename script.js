@@ -20,7 +20,7 @@ function init() {
 }
 
 function load_images(index) {
-    return `<a href="#" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]}></a>`;
+    return `<a href="#" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]} alt="${images[index]}"></a>`;
 }
 
 const dialogRef = document.getElementById("pictureDialog");
@@ -42,7 +42,7 @@ function showImageDialog(index) {
 }
 
 function showImage(index) {
-    return `<img src=./img/${images[index]}>`;
+    return `<img src=./img/${images[index]} alt="${images[index]}">`;
 }
 
 function buttonLeft(index) {
@@ -69,7 +69,7 @@ function buttonRight(index) {
 
 function footerdialog(index) {
     return `<button onclick="buttonLeft(${index})">&blacktriangleleft;</button>
-                <span>${index + 1}/${images.length}</span>
+                <span id="dialogspan" data-index=${index}>${index + 1}/${images.length}</span>
                 <button onclick="buttonRight(${index})">&blacktriangleright;</button>`
 }
 
@@ -80,4 +80,15 @@ function eventBubbling(event) {
 const image_name = document.getElementById('name_img')
 function name_for_img(index) {
     image_name.innerHTML = images[index];
+}
+
+function pressArrow (event) {
+    const spanElementIndex = document.getElementById('dialogspan');
+    index = spanElementIndex.dataset.index;
+    if (event.key === 'ArrowLeft') {
+            buttonLeft(index);
+    }
+    if (event.key === 'ArrowRight') {
+            buttonRight(index);
+    }
 }

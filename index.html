@@ -20,7 +20,7 @@
             <h1>Album</h1>
             <section class="image_style" id="image_load"></section>
         </div>
-        <dialog onclick="closeDialog()" class="pictureDialogclass" id="pictureDialog">
+        <dialog onclick="closeDialog()" onkeydown="pressArrow(event)" class="pictureDialogclass" id="pictureDialog">
             <header onclick="eventBubbling(event)">
                 <h2 id="name_img"></h2>
                 <button onclick="closeDialog()">&times;</button>
