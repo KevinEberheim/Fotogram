@@ -60,11 +60,25 @@ h1 {
 }
 
 .image_style img {
-    border-radius: 10px;
+    border-radius: 16px;
     height: 230px;
     width: 230px;
     object-fit: cover;
     cursor: pointer;
+}
+
+.image_style a {
+    border-radius: 16px;
+    height: 230px;
+    width: 230px;
+}
+
+.image_style a:hover {
+    outline: 4px solid #6BC1E1;
+}
+
+a:focus-visible{
+    outline: 3px solid #6BC1E1;
 }
 
 .footer_main_website {
@@ -85,8 +99,10 @@ h1 {
 .pictureDialogclass header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
-    padding-inline: 40px;
+    text-align: center;
+    padding-inline: 32px;
     padding-top: 8px;
 }
 
@@ -112,7 +128,7 @@ h1 {
     padding-bottom: 8px;
 }
 
-.pictureDialogclass button {
+.leftRightButton {
     background-color: #1E1E23;
     color: #F05C50;
     font-size: 40px;
@@ -122,6 +138,40 @@ h1 {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+.leftRightButton:hover{
+    background-color: #382428;
+}
+
+.leftRightButton:focus-visible{
+    background-color: #382428;
+    outline: none;
+}
+
+.closeButton {
+    background-color:#082029;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background-color: #124658;
+}
+
+.closeButton:focus-visible {
+    background-color: #124658;
+    outline: none;
+}
+
+.closeButton:active {
+    background-color: #0D3240;
 }
 
 .pictureDialogclass::backdrop{

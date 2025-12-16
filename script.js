@@ -68,9 +68,9 @@ function buttonRight(index) {
 }
 
 function footerdialog(index) {
-    return `<button onclick="buttonLeft(${index})">&blacktriangleleft;</button>
+    return `<button onclick="buttonLeft(${index})" class="leftRightButton">&blacktriangleleft;</button>
                 <span id="dialogspan" data-index=${index}>${index + 1}/${images.length}</span>
-                <button onclick="buttonRight(${index})">&blacktriangleright;</button>`
+                <button onclick="buttonRight(${index})" class="leftRightButton">&blacktriangleright;</button>`
 }
 
 function eventBubbling(event) {
