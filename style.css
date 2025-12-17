@@ -69,15 +69,18 @@ h1 {
     cursor: pointer;
 }
 
-.image_style a {
+.image_style button {
+    background-color: #05171E;
     border-radius: 16px;
+    border: none;
+    padding: 0;
 }
 
-.image_style a:hover {
+.image_style button:hover {
     outline: 4px solid #6BC1E1;
 }
 
-a:focus-visible {
+button:focus-visible {
     outline: 4px solid #6BC1E1;
 }
 

@@ -20,7 +20,7 @@ function init() {
 }
 
 function load_images(index) {
-    return `<a href="#" aria-haspopup="dialog" aria-controls="pictureDialog" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]} alt="${images[index]}"></a>`;
+    return `<button aria-haspopup="dialog" aria-controls="pictureDialog" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]} alt="${images[index]}"></button>`;
 }
 
 const dialogRef = document.getElementById("pictureDialog");
