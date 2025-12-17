@@ -20,7 +20,7 @@ function init() {
 }
 
 function load_images(index) {
-    return `<button aria-haspopup="dialog" aria-controls="pictureDialog" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]} alt="${images[index]}"></button>`;
+    return `<button aria-haspopup="dialog" aria-controls="pictureDialog" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]} alt="Image ${images[index]}"></button>`;
 }
 
 const dialogRef = document.getElementById("pictureDialog");
@@ -43,7 +43,7 @@ function showImageDialog(index) {
 }
 
 function showImage(index) {
-    return `<img src=./img/${images[index]} alt="${images[index]}">`;
+    return `<img src=./img/${images[index]} alt="Image ${images[index]}">`;
 }
 
 function buttonLeft(index) {
