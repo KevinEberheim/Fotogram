@@ -20,7 +20,7 @@ function init() {
 }
 
 function load_images(index) {
-    return `<a href="#" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]} alt="${images[index]}"></a>`;
+    return `<a href="#" aria-haspopup="dialog" aria-controls="pictureDialog" onclick="openDialog(${index}), eventBubbling(event)"><img src=./img/${images[index]} alt="${images[index]}"></a>`;
 }
 
 const dialogRef = document.getElementById("pictureDialog");
@@ -68,9 +68,9 @@ function buttonRight(index) {
 }
 
 function footerdialog(index) {
-    return `<button onclick="buttonLeft(${index})" class="leftRightButton">&blacktriangleleft;</button>
-                <span id="dialogspan" data-index=${index}>${index + 1}/${images.length}</span>
-                <button onclick="buttonRight(${index})" class="leftRightButton">&blacktriangleright;</button>`
+    return `<button aria-label="Dialog switch image left" onclick="buttonLeft(${index})" class="leftRightButton">&blacktriangleleft;</button>
+                <span aria-label="Index of the selected image" id="dialogspan" data-index=${index}>${index + 1}/${images.length}</span>
+                <button aria-label="Dialog switch image right" onclick="buttonRight(${index})" class="leftRightButton">&blacktriangleright;</button>`
 }
 
 function eventBubbling(event) {

@@ -31,6 +31,7 @@ h1 {
     font-size: 64px;
     margin-top: 0px;
     margin-bottom: 64px;
+    text-align: center;
 }
 
 .main_website {
@@ -182,6 +183,9 @@ a:focus-visible {
     .pictureDialogclass img {
         width: 450px;
     }
+    h1{
+        font-size: 48px;
+    }
 }
 
 @media (max-width:600px) {
@@ -215,6 +219,9 @@ a:focus-visible {
     .footer_main_website{
         min-height: 100px;
     }
+    h1{
+        font-size: 32px;
+    }
 }
 
 @media (max-width:460px) {
@@ -241,5 +248,11 @@ a:focus-visible {
     .pictureDialogclass img {
         width: 250px;
         padding-inline: 16px;
+    }
+}
+
+@media (max-width:365px) {
+    h1{
+        width: 250px;
     }
 }

@@ -17,13 +17,13 @@
     </header>
     <main class="main_website">
         <div class="main_content">
-            <h1>Album</h1>
-            <section class="image_style" id="image_load"></section>
+            <h1 id="maintitle">Album Wintertime</h1>
+            <section aria-labelledby="maintitle" class="image_style" id="image_load"></section>
         </div>
-        <dialog onclick="closeDialog()" onkeydown="pressArrow(event)" class="pictureDialogclass" id="pictureDialog">
+        <dialog aria-labelledby="name_img" onclick="closeDialog()" onkeydown="pressArrow(event)" class="pictureDialogclass" id="pictureDialog">
             <header onclick="eventBubbling(event)">
                 <h2 id="name_img"></h2>
-                <button onclick="closeDialog()" class="closeButton">&times;</button>
+                <button aria-label="Dialog close" onclick="closeDialog()" class="closeButton">&times;</button>
             </header>
             <main onclick="eventBubbling(event)" id="dialogMain">
 
