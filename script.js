@@ -25,11 +25,12 @@ function load_images(index) {
 
 const dialogRef = document.getElementById("pictureDialog");
 const dialogFooterRef = document.getElementById("dialogFooter")
+const dialogHeaderRef = document.getElementById("dialogHeader")
 function openDialog(index) {
     dialogRef.showModal();
     showImageDialog(index);
     dialogFooterRef.innerHTML = footerdialog(index);
-    name_for_img(index);
+    dialogHeaderRef.innerHTML = headerdialog(index);
 }
 
 function closeDialog() {
@@ -73,13 +74,13 @@ function footerdialog(index) {
                 <button aria-label="Dialog switch image right" onclick="buttonRight(${index})" class="leftRightButton">&blacktriangleright;</button>`
 }
 
-function eventBubbling(event) {
-    event.stopPropagation();
+function headerdialog(index) {
+    return `<h2 id="name_img">${images[index]}</h2>
+                <button aria-label="Dialog close" onclick="closeDialog()" class="closeButton">&times;</button>`
 }
 
-const image_name = document.getElementById('name_img')
-function name_for_img(index) {
-    image_name.innerHTML = images[index];
+function eventBubbling(event) {
+    event.stopPropagation();
 }
 
 function pressArrow (event) {
