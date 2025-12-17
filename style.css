@@ -38,7 +38,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex: 1;
-
+    padding-block: 16px;
 }
 
 .main_content {
@@ -76,14 +76,14 @@ h1 {
     outline: 4px solid #6BC1E1;
 }
 
-a:focus-visible{
+a:focus-visible {
     outline: 4px solid #6BC1E1;
 }
 
 .footer_main_website {
     background-color: #082029;
     min-height: 140px;
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,17 +139,17 @@ a:focus-visible{
     cursor: pointer;
 }
 
-.leftRightButton:hover{
+.leftRightButton:hover {
     background-color: #382428;
 }
 
-.leftRightButton:focus-visible{
+.leftRightButton:focus-visible {
     background-color: #382428;
     outline: 2px solid #6BC1E1;
 }
 
 .closeButton {
-    background-color:#082029;
+    background-color: #082029;
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -173,6 +173,73 @@ a:focus-visible{
     background-color: #0D3240;
 }
 
-.pictureDialogclass::backdrop{
+.pictureDialogclass::backdrop {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+@media (max-width:710px) {
+    .pictureDialogclass img {
+        width: 450px;
+    }
+}
+
+@media (max-width:600px) {
+    .header_main_website img {
+        height: 80px;
+    }
+}
+
+@media (max-width:560px) {
+    .pictureDialogclass img {
+        width: 350px;
+    }
+
+    .image_style img {
+        height: 100px;
+    }
+    h1{
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width:490px) {
+    .header_main_website img {
+        height: 50px;
+    }
+
+    .header_main_website {
+        min-height: 100px;
+    }
+
+    .footer_main_website{
+        min-height: 100px;
+    }
+}
+
+@media (max-width:460px) {
+    .pictureDialogclass img {
+        width: 300px;
+    }
+
+    .pictureDialogclass h2 {
+        font-size: 16px;
+    }
+
+    .pictureDialogclass button {
+        font-size: 24px;
+        height: 32px;
+        width: 32px;
+    }
+
+    .pictureDialogclass footer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:410px) {
+    .pictureDialogclass img {
+        width: 250px;
+        padding-inline: 16px;
+    }
 }
