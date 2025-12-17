@@ -20,19 +20,26 @@
             <h1 id="maintitle">Album Wintertime</h1>
             <section aria-labelledby="maintitle" class="image_style" id="image_load"></section>
         </div>
-        <dialog aria-labelledby="name_img" onclick="closeDialog()" onkeydown="pressArrow(event)" class="pictureDialogclass" id="pictureDialog">
+        <dialog aria-labelledby="name_img" onclick="closeDialog()" onkeydown="pressArrowKey(event)"
+            class="pictureDialogclass" id="pictureDialog">
             <header id="dialogHeader" onclick="eventBubbling(event)">
-                
+                <h2 id="name_img">
+                    Title Dialog
+                </h2>
+                <button aria-label="Dialog close" onclick="closeDialog()" class="closeButton">
+                    &times;
+                </button>
             </header>
             <main onclick="eventBubbling(event)" id="dialogMain">
 
             </main>
             <footer onclick="eventBubbling(event)" id="dialogFooter">
-    
+
             </footer>
         </dialog>
     </main>
     <footer class="footer_main_website">&copy; 2025 Kevin Eberheim</footer>
 </body>
 <script src="script.js"></script>
+
 </html>
